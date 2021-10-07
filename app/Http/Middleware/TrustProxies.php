@@ -8,12 +8,9 @@ use Illuminate\Http\Request;
 class TrustProxies extends Middleware
 {
     /**
-     * @var string[]
+     * @var string
      */
-    protected $proxies = [
-        '192.168.1.1',
-        '192.168.1.2',
-    ];
+    protected $proxies = '**';
 
     /**
      * The headers that should be used to detect proxies.
